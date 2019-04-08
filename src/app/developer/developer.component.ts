@@ -9,14 +9,15 @@ import { Skill } from '../common/skill.model'
   styleUrls: ['./developer.component.css']
 })
 export class DeveloperComponent implements OnInit {
-public developer = new Developer('Jérémy','Guérin-Coquereau',31,'Homme','Ceci est une bio',[
-  new Skill ('Name','Logo','Site'),
-  new Skill ('JS', 'Javascript', 'Angular'),
-  new Skill ('CSS', 'HTML', 'Node.js'),
-]);
+public developer : Developer
 
   constructor() {}
 
   ngOnInit() {
+    this.developer = new Developer('Jérémy','Guérin-Coquereau',31,'Homme','Ceci est une bio',[
+      new Skill ('Name','Logo','Site'),
+      new Skill ('JS', 'Javascript', 'Angular'),
+      new Skill ('CSS', 'HTML', 'Node.js'),
+    ]);
   }
 }
