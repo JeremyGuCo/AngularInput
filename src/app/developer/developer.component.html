@@ -1,20 +1,19 @@
-<form>
   <h1>Quête @Input</h1>
 
   <div>
-    <h4 class="alert alert-dark">Lastname</h4>
-    <p>{{ developer.lastName }}</p>
-    <h4 class="alert alert-dark">First name</h4>
-    <p>{{ developer.firstName }}</p>
-    <h4 class="alert alert-dark">Age</h4>
-    <p>{{ developer.age }}</p>
-    <h4 class="alert alert-dark">Sexe</h4>
-    <p>{{ developer.sexe }}</p>
-    <h4 class="alert alert-dark">Bio</h4>
-    <p>{{ developer.bio }}</p>
+    <h2 class="alert alert-dark">Lastname</h2>
+    <h4>{{ developer.lastName }}</h4>
+    <h2 class="alert alert-dark">First name</h2>
+    <h4>{{ developer.firstName }}</h4>
+    <h2 class="alert alert-dark">Age</h2>
+    <h4>{{ developer.age }}</h4>
+    <h2 class="alert alert-dark">Sexe</h2>
+    <h4>{{ developer.sexe }}</h4>
+    <h2 class="alert alert-dark">Bio</h2>
+    <h4>{{ developer.bio }}</h4>
   </div>
 
   <h4 class="alert alert-primary">Skills component:</h4>
   <app-skill *ngFor="let skill of developer.skills" [skill]="skill">
   </app-skill>
-</form>
+
